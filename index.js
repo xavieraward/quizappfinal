@@ -6,7 +6,7 @@ const DATA = [
         correctAnswer: 'Creedence Clearwater Revival', 
         goodFeedback: 'Yup! The band released Bayou Country, Green River, and Willy and the Poor Boys in 1969 containing songs such as “Fortunate Son,” “Proud Mary,” “Born on the Bayou,” and “Bad Moon Rising” and a number of other radio hits they’re still known for.',
         badFeedback: 'Boo! Sorry, wrong answer. CCR released Bayou Country, Green River, and Willy and the Poor Boys in 1969 containing songs such as “Fortunate Son,” “Proud Mary,” “Born on the Bayou,” and “Bad Moon Rising” and a number of other radio hits they’re still known for.',
-        image: '../imgs/ccr.jpg',
+        image: 'imgs/ccr.jpg',
         alt: 'Creedence Clearwater Revival',
     },
     {
@@ -16,7 +16,7 @@ const DATA = [
         correctAnswer: 'As a tribute to The Beatles', 
         goodFeedback: 'Yup! Prior to being known as The Beatles, the band went by The Silver Beatles and each member donned a stage name. Paul McCartney was known as “Paul Ramón.” Thus, years later, The Ramones were born and also adopted stage names.',
         badFeedback: 'Nope. The Ramones got their name from the stage name previously used by Paul McCartney when The Beatles were "The Silver Beatles." He went by “Paul Ramón.”',
-        image: '../imgs/ramones.jpg',
+        image: 'imgs/ramones.jpg',
         alt: 'The Ramones',
     },
     {
@@ -25,7 +25,7 @@ const DATA = [
         correctAnswer: 'Frank Zappa', 
         goodFeedback: 'Indeed! Frusciante was a massive Zappa fan and went to the audition for his band but left before playing because Zappa had a strict no drugs or alcohol policy, and John wanted to be a rock star who indulged in both of those vices.',
         badFeedback: 'Sorry! Wrong this time. Frusciante nearly auditioned for Frank Zappa\'s band but dropped out because Zappa had a no booze, no drugs policy.',
-        image: '../imgs/johnfrusciante.jpg',
+        image: 'imgs/johnfrusciante.jpg',
         alt: 'John Frusciante',
     },
     {
@@ -35,7 +35,7 @@ const DATA = [
         correctAnswer: 'To one-up The Who', 
         goodFeedback: 'Right you are! The night before, Pete Townshend of The Who smashed his guitar on stage. Hendrix felt the need to outdo Townshend, and burned his guitar on stage during his set, creating one of the most iconic Hendrix photos.',
         badFeedback: 'Nope, sorry. Jimi burned his guitar to one-up Pete Townshend, who\'d smahsed his guitar on stage the night before.',
-        image: '../imgs/hendrix.jpg',
+        image: 'imgs/hendrix.jpg',
         alt: 'Jimi Hendrix Burning Guitar',
     },
     {
@@ -44,7 +44,7 @@ const DATA = [
         correctAnswer: 'It was a joke about their chances of success', 
         goodFeedback: 'Yes! In 1968, the band that would come to be known as Led Zeppelin (then The New Yardbirds) was in its early days. Drummer of The Who Keith Moon was quoted in a newspaper article saying The New Yardbirds would “go down like a lead zeppelin” and the band took that as its new moniker.',
         badFeedback: 'Wrong answer. The Who drummer Keith Moon was quoted in a newspaper article saying they would "go down like a lead zeppelin" and the name stuck.',
-        image: '../imgs/zeppelin.jpg',
+        image: 'imgs/zeppelin.jpg',
         alt: 'Led Zeppelin',
     },
     {
@@ -53,7 +53,7 @@ const DATA = [
         correctAnswer: 'Being a suspicious old man who was loitering on a random lawn', 
         goodFeedback: 'Righto! Dylan was taking a night walk in the rain in Long Branch, NJ in 2009 when he wandered into the yard of a for sale home. The home was still occupied and residents called the police. When police arrived, Dylan (not carrying identification) identified himself as Bob Dylan, and the police thought he was simply a crazy wandering vagrant.',
         badFeedback: 'Nope, sorry. Dylan was taking a night walk when he wandered into a random yard of a for sale home. The residents called the cops, and when he identified himself as Bob Dylan but was not carrying ID, they thought he was just a wandering vagrant. Oh, Bob.',
-        image: '../imgs/bobby.jpg',
+        image: 'imgs/bobby.jpg',
         alt: 'Bob Dylan',
     },
     {
@@ -62,7 +62,7 @@ const DATA = [
         correctAnswer: 'Chuck Berry', 
         goodFeedback: 'Yes! This may sound like an opinion, but Elvis Presley was billed as “the king of rock and roll” due to a racial divide in the south. In reality, rock historians believe Berry to have birthed the genre.',
         badFeedback: 'Nope. While it may sound like opinion, rock historians credit Chuck Berry with birthing the genre. Elvis was likely given credit due to a racial divide in the south.',
-        image: '../imgs/chuck.jpg',
+        image: 'imgs/chuck.jpg',
         alt: 'Chuck Berry',
     },
     {
@@ -71,7 +71,7 @@ const DATA = [
         correctAnswer: 'Nirvana', 
         goodFeedback: 'Indeed! During the release party for Nevermind in 1991, every member of the band was thrown out of the party for starting a food fight. Very mature, guys.',
         badFeedback: 'Nope, sorry. Every member of Nirvana was kicked out of the album release party for Nevermind in 1991 after starting a food fight.',
-        image: '../imgs/nirvana.jpg',
+        image: 'imgs/nirvana.jpg',
         alt: 'Nirvana',
     },
     {
@@ -80,7 +80,7 @@ const DATA = [
         correctAnswer: 'UFOs', 
         goodFeedback: 'Yes! During the 1940s, the U.S. Air Force (founded in 1947) referred to unidentified flying objects (maybe aliens?) as “Foo Fighters.” Guess they thought it sounded cool.',
         badFeedback: 'No, sorry. The Foo Fighters are named after what the U.S. Air Force called UFOs in the 1940s: Foo Fighters.',
-        image: '../imgs/foofighters.jpg',
+        image: 'imgs/foofighters.jpg',
         alt: 'Foo Fighters',
     },
     {
@@ -89,7 +89,7 @@ const DATA = [
         correctAnswer: 'Rod Stewart', 
         goodFeedback: 'Nice, that\'s right. In 1994, Rod Stewart performed in front of 3.5 million people at Copacabana Beach in Brazil. Crazy, right?',
         badFeedback: 'Nope. In 1994, Rod Stewart performed in front of 3.5 million people at Copacabana Beach in Brazil.',
-        image: '../imgs/rodstewart.jpg',
+        image: 'imgs/rodstewart.jpg',
         alt: 'Rod Stewart and The Faces',
     },
 ];
@@ -193,14 +193,14 @@ function ifIncorrect() {
 //feedback functions
 function giveGoodFeedback() {
     let correctAnswer = `${DATA[questionNumber].correctAnswer}`;
-    $('.quizForm').html(`<div class="correctFeedback"><div class="image">
+    $('.quizForm').html(`<div class="feedback"><div class="image">
     <img src="${DATA[questionNumber].image}" alt="${DATA[questionNumber].alt}"/>
     </div><p>${DATA[questionNumber].goodFeedback}</p><button type=button class="nextButton">Next</button></div>`)
 }
 
 function giveBadFeedback() {
     let correctAnswer = `${DATA[questionNumber].correctAnswer}`;
-    $('.quizForm').html(`<div class="correctFeedback"><div class="image">
+    $('.quizForm').html(`<div class="feedback"><div class="image">
     <img src="${DATA[questionNumber].image}" alt="${DATA[questionNumber].alt}"/>
     </div><p>${DATA[questionNumber].badFeedback}</p><button type=button class="nextButton">Next</button></div>`)
 }
