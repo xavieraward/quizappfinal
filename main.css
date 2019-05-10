@@ -43,7 +43,7 @@ button:hover {
     cursor: pointer;
 }
 
-input:hover {
+fieldset:hover {
     cursor: pointer;
 }
 
