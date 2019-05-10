@@ -230,7 +230,7 @@ function giveFinalFeedback() {
         <button type=button class="restartButton">Restart</button></div>`);
     }
 
-    else if (scoreNumber < 7 && score >= 4) {
+    else if (scoreNumber < 7 && scoreNumber >= 4) {
         $('.quizForm').html(`<div class="finalFeedback">
         <h2>Not bad!</h2>
         <img scr=''>
