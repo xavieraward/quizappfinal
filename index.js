@@ -106,6 +106,7 @@ function generateQuestion() {
         return `<div class="quizQuestions-${questionNumber}">
         <h2>${DATA[questionNumber].question}</h2>
         <form>
+        <legend>
         <fieldset>
         <label class="answerOption">
         <input type="radio" value="${DATA[questionNumber].answers[0]}" name="answer" required>
@@ -125,6 +126,7 @@ function generateQuestion() {
         </label>
         <button type="submit" class="submitQuestion">Submit</button>
         </fieldset>
+        </legend>
         </form>
         </div>`
     }
